@@ -66,7 +66,7 @@ main ul li {
     background: url('images/toast-bullet.jpeg') no-repeat left center; /* Use toast image as bullet */
     background-size: 20px 20px; /* Adjust size of the toast image */
     padding-left: 30px; /* Space for the image to show before text */
-    margin-bottom: 10px; /* Optional: Add spacing between list items */
+    margin-bottom: 10px; 
 }
 
 .link {
@@ -79,7 +79,7 @@ main ul li {
 .action {
     font-size: 1.75em;
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
 }
 
 #contact {
@@ -98,4 +98,348 @@ footer {
 footer a {
     color: #f3e6d8;
     text-decoration: none;
+}
+
+/* hero image specials.html */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+
+/* specials.html */
+/* Styles for Product of the Week images and figcaptions */
+/* Container grid for Product of the Week and Weekly Sales */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specials-image {
+    width: 100%;
+    max-width: 200px; /* Set exact width for consistency */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-item figcaption {
+    margin-top: 8px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Customer Guarantee Section layout */
+#specials .customer-guarantee {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjusts columns for image and text */
+    gap: 20px; /* Space between the image and text */
+    align-items: center;
+    margin: 20px 0;
+}
+
+#specials .customer-guarantee img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+}
+
+/* Ensure text is left-aligned in the Customer Guarantee section */
+#specials .customer-guarantee div {
+    text-align: left;
+}
+
+/* Ensure round bullets for list items in the Customer Guarantee section */
+#specials .customer-guarantee ul {
+    list-style-type: disc; /* Standard round bullet */
+    padding-left: 20px; /* Add some padding to align bullets nicely */
+}
+
+#specials .customer-guarantee ul li {
+    margin-bottom: 8px; /* Add spacing between each list item */
+}
+
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+/* Grid layout for image and text */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 part image, 2 parts text */
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: to give images rounded corners */
+}
+
+.about-section p, .about-section ul {
+    text-align: justify; /* Justify text in the paragraphs and lists */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+/* Grid layout for image and text */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 part image, 2 parts text */
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: to give images rounded corners */
+}
+
+.about-section p, .about-section ul {
+    text-align: justify; /* Justify text in the paragraphs and lists */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Remove bullets for reasons list */
+.reasons-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.reasons-list li {
+    margin-bottom: 10px; /* Space between each reason */
+}
+
+
+
+/* media queries */
+/* Mobile (small screens) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    nav li {
+        display: block; /* Stack navigation items vertically */
+        text-align: left;
+        padding: 0.5em;
+    }
+
+    .hero-image {
+        height: 30vh; /* Adjust the height of the hero image */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack product items vertically */
+    }
+
+    .product-item figcaption {
+        font-size: 0.9em; /* Adjust caption font size */
+    }
+
+    .specials-image {
+        width: 100%; /* Make images responsive */
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    #specials .customer-guarantee {
+        grid-template-columns: 1fr; /* Stack image and text vertically */
+    }
+
+    #specials .customer-guarantee img {
+        width: 100%; /* Make images responsive */
+    }
+
+    .about-container {
+        padding: 0 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack image and text vertically */
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section p, .about-section ul {
+        font-size: 0.95em; /* Adjust text size for smaller screens */
+    }
+
+    .reasons-list li {
+        font-size: 0.9em; /* Adjust font size for list items */
+    }
+}
+
+/* Tablets (portrait mode) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr; /* Display 2 columns instead of 3 */
+    }
+
+    .hero-image {
+        height: 40vh; /* Adjust the hero image size */
+    }
+
+    #specials .customer-guarantee {
+        grid-template-columns: 1fr 1fr; /* Adjust columns to be more balanced */
+    }
+
+    .product-item figcaption {
+        font-size: 1em; /* Increase font size slightly */
+    }
+
+    .specials-image {
+        width: 100%;
+        max-width: 150px; /* Keep images at a reasonable size */
+    }
+
+    .about-container {
+        padding: 0 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1.5fr; /* Slightly adjust column ratio */
+    }
+
+    .about-section p, .about-section ul {
+        font-size: 1em; /* Ensure text is readable on tablets */
+    }
+
+    .reasons-list li {
+        font-size: 1em; /* Adjust list font size */
+    }
+}
+
+/* Small Desktops and Laptops */
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        height: 45vh; /* Adjust hero image height for medium screens */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Maintain 3 columns */
+    }
+
+    #specials .customer-guarantee {
+        grid-template-columns: 1fr 1.5fr; /* Slightly adjust layout */
+    }
+
+    .product-item figcaption {
+        font-size: 1.1em; /* Slightly larger caption text */
+    }
+
+    .specials-image {
+        max-width: 180px; /* Maintain consistency in image sizes */
+    }
+
+    .about-container {
+        padding: 0 40px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1.8fr; /* Adjust column ratio */
+    }
+
+    .about-section p, .about-section ul {
+        font-size: 1.05em; /* Increase readability */
+    }
+
+    .reasons-list li {
+        font-size: 1.1em; /* Slightly larger font size */
+    }
+}
+
+/* Large Screens (Desktops and larger devices) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        height: 50vh; /* Default hero image height */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Maintain 3 columns */
+    }
+
+    .specials-image {
+        max-width: 200px; /* Maintain consistency in image sizes */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 2fr; /* Maintain default grid layout */
+    }
+
+    .about-section p, .about-section ul {
+        font-size: 1.25em; /* Increase text size for larger screens */
+    }
+
+    .reasons-list li {
+        font-size: 1.25em; /* Slightly larger font size */
+    }
 }
