@@ -1,0 +1,155 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+header {
+    text-align: center; /* Centers the content horizontally */
+    padding: 1em 0; /* Adds some vertical spacing */
+}
+
+header img {
+    width: 70%; /* Stretches image across the entire width */
+    height: 350px; /* Set a shorter height as needed */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+
+/* General Container */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Section */
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h1, .about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4d3319;
+    font-family: 'Verdana', sans-serif;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    text-align: justify;
+    color: #2a1f14;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Content */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Reasons List */
+.reasons-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.reasons-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 30px;
+    color: #4d3319;
+}
+
+.reasons-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/toast-bullet.jpeg') no-repeat center center;
+    background-size: contain;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section h1, .about-section h2 {
+        font-size: 1.5em;
+    }
+
+    .about-section p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}

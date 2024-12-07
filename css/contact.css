@@ -1,0 +1,171 @@
+
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center; /* Centers the content horizontally */
+    padding: 1em 0; /* Adds some vertical spacing */
+}
+
+header img {
+    width: 70%; /* Stretches image across the entire width */
+    height: 400px; /* Set a shorter height as needed */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+
+/* Main Section */
+main {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Form List Styling */
+ol {
+    margin-left: 1rem;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Form Fieldset Styling */
+fieldset {
+    border: 2px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Form Legends */
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Labels */
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Textarea Specific Styling */
+textarea {
+    resize: vertical;
+}
+
+/* Radio Button and Checkbox Styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit & Reset Buttons */
+button[type="submit"],
+button[type="reset"] {
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}

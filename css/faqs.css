@@ -1,0 +1,145 @@
+/* Reset */
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #f6eee4;
+    font-family: Verdana, Arial, sans-serif;
+    color: #2a1f14;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a {
+    display: block;
+    color: #f6eee4;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4d3319;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+header {
+    text-align: center; /* Centers the content horizontally */
+    padding: 1em 0; /* Adds some vertical spacing */
+}
+
+header img {
+    width: 70%; /* Stretches image across the entire width */
+    height: 350px; /* Set a shorter height as needed */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.faq-item h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.faq-item a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}

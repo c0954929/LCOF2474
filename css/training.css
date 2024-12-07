@@ -1,0 +1,140 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+header {
+    text-align: center; /* Centers the content horizontally */
+    padding: 1em 0; /* Adds some vertical spacing */
+}
+
+header img {
+    width: 70%; /* Stretches image across the entire width */
+    height: 400px; /* Set a shorter height as needed */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+/* Reset styles for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #2a1f14;
+    color: #fff;
+}
+
+/* Table header and data cell styles */
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Highlight row when hovering over any row */
+tr:hover {
+    background-color: #d3e4cd;
+}
+
+/* Image column styling */
+td img {
+    width: 200px; /* Set image width */
+    height: auto;
+    max-height: 80px; /* Optionally limit the height */
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+    border-radius: 5px; /* adds rounded corners to images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+    transform: scale(0.8); /* Initially scaled down */
+}
+
+/* Expand image and add shadow on hover */
+td img:hover {
+    transform: scale(4); /* Zoom out to normal size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the image */
+}
+
+/* Table responsive design for mobile screens */
+@media screen and (max-width: 768px) {
+    th, td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    td img {
+        width: 80px; /* Adjust image size for smaller screens */
+        max-height: 60px;
+        transform: scale(0.8); /* Scale image down for mobile view */
+    }
+
+    td img:hover {
+        transform: scale(1); /* Ensure hover effect works for mobile screens */
+    }
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}

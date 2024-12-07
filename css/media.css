@@ -1,0 +1,144 @@
+/* Reset */
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #f6eee4;
+    font-family: Verdana, Arial, sans-serif;
+    color: #2a1f14;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a {
+    display: block;
+    color: #f6eee4;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4d3319;
+}
+
+/* Header styles */
+header img {
+    width: 50%; /* Stretches image across the entire width */
+    height: 400px; /* Set a shorter height as needed */
+    object-fit: cover; /* Ensures the image doesn't distort */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Video Section */
+.faq-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.faq-video h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq-video video {
+    max-width: 80%; /* Makes the video smaller */
+    max-height: 200px; /* Restricts the video height */
+    margin: 1rem 0; /* Adds spacing around the video */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-video p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .faq-video video {
+        max-width: 100%; /* Full width on smaller screens */
+        max-height: none; /* Removes height restriction on smaller screens */
+    }
+}
